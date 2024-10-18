@@ -265,16 +265,40 @@ title a:hover {
 
 /* Páginas de contato */
 
-#container-redes {
-  margin: 0 auto;
-  max-width: 1200px;
-  text-align: center;
-  justify-content:center;
-}
-
 #heading-redes{
   text-align: center;
   text-justify: center;
-  margin: 30px;
+  margin: 50px;
   color: #FFF;
+  font-size:38px;
+}
+
+
+#container-redes {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.links-redes {
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 8px; 
+  min-width: 680px;
+  margin-bottom: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.links-redes:hover {
+  background-color: #1d1d1dad;
+}
+
+
+.links-redes a {
+  font-size: 1rem;
 }
