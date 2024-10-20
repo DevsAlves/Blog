@@ -28,6 +28,7 @@ p {
 body {
     background-color: #090909;
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 
@@ -108,7 +109,7 @@ header #navbar {
     transition: 0.4s;
 }
 
-title a:hover {
+.title a:hover {
     color: #37a1f7;
 }
 
@@ -171,8 +172,9 @@ title a:hover {
 /* Rodapé */
 #footer {
   border-top: 2px solid #ddd;
-  padding: 3rem;
+  padding: 2rem;
   text-align: center;
+  width: 100%;
 }
 
 #footer h2 {
@@ -224,8 +226,10 @@ title a:hover {
 
 #main-container-dicas {
   margin-top: 80px;
-  overflow: hidden; /* Para esconder o conteúdo que sai da área visível */
   animation: scroll-animation 10s linear infinite; /* Tempo e repetição da animação */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -282,7 +286,8 @@ title a:hover {
   justify-items: center;
   padding: 10px;
   text-align: center;
-  flex-direction: column;
+  flex-direction: column;  
+  margin-bottom: 290px; 
 }
 
 .links-redes {
@@ -301,4 +306,45 @@ title a:hover {
 
 .links-redes a {
   font-size: 1rem;
+}
+
+/* Página de linguagens  */
+#main-languages {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-languages h1 {
+  color: #a0a0a0;
+  text-align: center;
+  margin-top: 20px;
+}
+#tip-languages {
+  margin-top: 20px;
+  font-size: 19px;
+  margin-top: 42px;
+  text-align: center;
+}
+
+
+#tip-languages  a {
+  text-decoration: underline;
+}
+
+.container-languages {
+  margin: 32px 8px 10px 16px;
+}
+
+.container-languages h2 {
+  margin-bottom: 5px;
+  color: #c0c0c0;
+}
+
+#result {
+  color: #f0f0f0;
+  margin-top: 30px;
+  text-align: center;
 }
