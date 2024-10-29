@@ -136,6 +136,11 @@ header #navbar {
   color: #f0f0f0;
 }
 
+.form{
+  height: 250px;
+}
+
+
 #search-bar form {
   display: flex;
 }
